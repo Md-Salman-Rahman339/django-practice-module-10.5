@@ -1,0 +1,7 @@
+python -m django startproject project_4
+
+pip install django
+
+python -m django --version
+
+python -m django startapp first_app

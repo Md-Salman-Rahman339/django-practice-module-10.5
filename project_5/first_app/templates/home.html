@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   <h1>This is home page</h1>
+
+   <h2>Author:{{author}}</h2>
+   <h2>Age:{{age}}</h2>
+   <h2>list:{{lst}}</h2>
+
+   {% if age >= 20 %}
+   <h4>You will get driving license</h4>
+{% elif age >= 10 and age <= 19 %}
+   <h4>You will not get driving license</h4>
+{% else %}
+   <h4>You're a child</h4>
+{% endif %}
+
+<h4>{{ lst | join:" - " }}</h4>
+
+<h2>{{ birthday | date:"D d M Y" }}</h2>
+
+<h2>{{ word | length }}</h2>
+<h2>Age:{{ age | add:"2" }}</h2>
+<h2>{{ slashes | addslashes }}</h2>
+<h2>{{ word | capfirst }}</h2>
+<h2>"{{  word | center:"15" }}"</h2>
+
+<h2>{{ slashes | cut:" " }}</h2>
+<h2>{{ nothing | default:"nothing" }}</h2>
+
+<h3>{{ sorting | dictsort:"age" }}</h3>
+<h2>{{ number | divisibleby:"4" }}</h2>
+<h2>{{ formate | filesizeformat }}</h2>
+<h3>{{ sorting | first }}</h3>
+<h3>{{ sorting | last }}</h3>
+<h2>{{ sorting | linenumbers}}</h2>
+<h2>{{ sorting | linenumbers}}</h2>
+<h2>{{ slashes | lower }}</h2>
+<h2>{{ slashes | make_list }}</h2>
+<h2>Random:{{ slashes | random }}</h2>
+<h2>slice:{{ sorting | slice:":1" }}</h2>
+
+<h2>It is used to convert to ASCII:{{ slashes | slugify }}</h2>
+<p>time
+
+    It is used to format a time according to the given format <h2>{{ birthday | time:"H:i" }}</h2></p>
+    <h2>{{ ul | unordered_list }}</h2>
+    <h2> {{ '2022-01-02T10:30:00.000123
+        ' | timesince }} </h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+</body>
+</html>
