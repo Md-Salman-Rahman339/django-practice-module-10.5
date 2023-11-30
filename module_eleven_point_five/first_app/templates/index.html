@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Index Page{% endblock %}
+
+{% block content %}
+ 
+    <div class="row" style="width: 100rem;">
+    {% for i in meals %}
+    <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card  " style=" ">
+            
+            <img class="card-img-top " src="{{i.strMealThumb}}" alt="Card image cap">
+            <div class="card-body ">
+                <h5 class="card-title">{{i.strMeal}}</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas corrupti doloribus ipsa hic sequi, quibusdam a odit porro officiis repudiandae?</p>
+               
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
