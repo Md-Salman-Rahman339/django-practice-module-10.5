@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% load  static %}
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mx-auto text-center mb-4">
+            <h4>Welcome to Meherish Kitchen, where every meal is a masterpiece and each bite tells a story of culinary innovation. As we celebrate our first anniversary, we invite you to embark on a gastronomic adventure like no other.</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 mx-auto text-center">
+            <img src="{% static 'home.avif' %}" alt="Home image" class="img-fluid">
+        </div>
+    </div>
+</div>
+{% endblock %}

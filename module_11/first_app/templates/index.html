@@ -1,0 +1,43 @@
+
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content  %}
+
+
+
+
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">UserID</th>
+        <th scope="col">id</th>
+        <th scope="col">title</th>
+        <th scope="col">body</th>
+      </tr>
+    </thead>
+    <tbody>
+        {%for i in data %}
+      <tr>
+        <th scope="row">{{i.userId}}</th>
+        <td>{{i.id}}</td>
+        <td>{{i.title}}</td>
+        <td>{{i.body}}</td>
+      </tr>
+
+      {% endfor %}
+      
+    </tbody>
+  </table>
+
+
+
+
+    <h1>This is index page</h1>
+    <img src="{% static 'bird1.avif' %}" alt="" height="300px">
+
+
+
+    {% endblock %}  

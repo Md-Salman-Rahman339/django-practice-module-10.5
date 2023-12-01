@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% load  static %}
+{% block title %}About Page{% endblock %}
+
+{% block about %}
+<div class="container background-image ">
+
+    <div class="row">
+        <div class="col-md-6 mx-auto text-center ">
+            {% comment %} <img src="{% static 'images/about1.jpg' %}" alt="About Image" class="img-fluid"> {% endcomment %}
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 mx-auto text-center mb-4">
+            <h4 class="bg-danger">Meherish Kitchen,
+                Mohammadpur,
+                Shekhertek 4,Dhaka
+                Country:Bangladesh
+                email:mkitchen@gmail.com
+                
+                </h4>
+        </div>
+    </div>
+</div>
+{% endblock %}
