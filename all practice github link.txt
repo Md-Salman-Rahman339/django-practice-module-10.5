@@ -1,5 +1,9 @@
-module 10.5 practice:  https://github.com/Md-Salman-Rahman339/django-practice-module-10.5/tree/main/project_5
+practice module 10.5 practice:  https://github.com/Md-Salman-Rahman339/django-practice-module-10.5/tree/main/project_5
 
 
-module 11.5:
+practice module 11.5:
 https://github.com/Md-Salman-Rahman339/Module-11.5-practice/tree/main/module_eleven_point_five
+
+Doc File:https://docs.google.com/document/d/1JaVuPfOhkMDhQcDMGk_k9euUosuPVGUySFY_ej3lUzM/edit?usp=sharing
+
+Assignment 3 Github Link:https://github.com/Md-Salman-Rahman339/django-practice-module-10.5/tree/main/Restaurant

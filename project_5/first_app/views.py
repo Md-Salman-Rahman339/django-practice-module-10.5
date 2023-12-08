@@ -13,7 +13,7 @@ def home(request):
        'ul':['States', ['Kansas', ['Lawrence', 'Topeka'], 'Illinois']],
        'formate':'123456789564126842842585456',
        'listorder':'one, two, three',
-       'publication_date': datetime.strptime("your_publication_date_string", "%Y-%m-%d %H:%M:%S"),
+    #    'publication_date': datetime.strptime("your_publication_date_string", "%Y-%m-%d %H:%M:%S"),
        'sorting':[
     {'name': 'zed', 'age': 19},
     {'name': 'amy', 'age': 22},
