@@ -20,41 +20,46 @@
       {% for m in data %}
         <tr>
           <th scope="row">{{ m.musician.id }}</th>
-          <td>{{m.musician.First_name }} {{m.musician.Last_name }}</td>
+          <td><a href="{% url 'edit_musician' m.musician.id %}">{{ m.musician.First_name }} {{ m.musician.Last_name }}</a></td>
+
           <td>{{ m.musician.email }}</td>
           <td>
-            {% if m.Album %}
+            {{m.ratings}}
+
+            {% comment %} {% if m.Album %}
               {{ m.Ratings }}
             {% else %}
               No album available
-            {% endif %}
+            {% endif %} {% endcomment %}
           </td>
           <td>{{ m.musician.instrument_type }}</td>
           <td>
-            {% if m.album %}
+            {{m.album_name}}
+            {% comment %} {% if m.album %}
               {{ m.album_name }}
             {% else %}
               No album available
-            {% endif %}
+            {% endif %} {% endcomment %}
           </td>
           <td>
-            {% if m.album %}
+            {% if m %}
               {{m.release_date|date:"d-M-Y" }}
             {% else %}
               No album available
             {% endif %}
           </td>
           <td>
-            {% if m.album %}
-              <a href="{% url 'edit_album' id=musician.album.id %}" class="btn btn-warning">Edit</a>
+            {% if m %}
+              <a href="{% url 'edit_album' m.id %}" class="btn btn-warning">Edit</a>
             {% else %}
               No album available
             {% endif %}
-            <a href="#" class="btn btn-danger">Delete</a>
+            <a href="{% url 'delete_album' m.id %}" class="btn btn-danger">Delete</a>
+
           </td>
         </tr>
       {% endfor %}
     </tbody>
   </table>
-  {{data.musician.album_name}}
+  
 {% endblock %}

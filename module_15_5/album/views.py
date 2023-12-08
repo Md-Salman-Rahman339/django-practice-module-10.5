@@ -31,3 +31,8 @@ def edit_album(request, id):
         album_form = forms.AlbumForm(instance=album_instance)
 
     return render(request, 'album.html', {'form': album_form})
+
+def delete_album(request,id):
+    album_instances=models.Album.objects.get(pk=id)
+    album_instances.delete()
+    return redirect('homepage')
