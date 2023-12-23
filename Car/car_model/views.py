@@ -54,7 +54,6 @@ class DetailsPost(DetailView):
     
 def buy_car(request, id):
     post = get_object_or_404(Car, id=id)
-
     if post.quantity > 0:
         post.quantity -= 1
         post.save()
@@ -63,4 +62,4 @@ def buy_car(request, id):
     else:
         messages.warning(request, 'All cars are sold out. Please look forward to new stock.')
 
-    return redirect('detail_post', id=id)
+    return redirect('detail_post',id)

@@ -9,7 +9,7 @@ urlpatterns = [
     path('',views.home,name='homepage'),
     path('brand_model/<slug:brand_slug>/',views.home,name='brand_wise_post'),
     path('brand_model/',include('brand_model.urls')),
-    path('car_model/',include('car_model.urls')),
+    path('car_models/',include('car_model.urls')),
     path('owner/',include('owner.urls')),
 ]
 

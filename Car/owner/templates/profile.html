@@ -7,21 +7,21 @@
       Edit Your Profile
     </a>
     <h2>Your Bought Cars:</h2>
-    {% if bought_cars %}
+    {% if data %}
       <div class="row">
-        {% for car in bought_cars %}
+        {% for val in data %}
           <div class="col-sm-3">
             <div class="card m-2">
               <div class="card-body">
-                {% if car.image %}
-                  <img src="{{ car.image.url }}" class="card-img-top" alt="...">
+                {% if val.car.image %}
+                  <img src="{{ val.car.image.url }}" class="card-img-top" alt="...">
                 {% else %}
                   <p>There is no image.</p>  
                 {% endif %}
-                <p class="card-text">{{ car.car_model_name }}</p>
-                <p>Brand: {{ car.brand.name }}</p>
-                <p>Price: {{ car.car_price }}</p>
-                <p>Quantity: {{ car.quantity }}</p>
+                <p class="card-text">{{ val.car.car_model_name }}</p>
+                <p>Brand: {{ val.car.brand.name }}</p>
+                <p>Price: {{ val.car.car_price }}</p>
+                <p>Quantity: {{ val.car.quantity }}</p>
               </div>
             </div>
           </div>

@@ -12,4 +12,4 @@ def home(request, brand_slug=None):
     else:
         brand = None 
 
-    return render(request, 'home.html', {'data': data,'brand': brand})
+    return render(request, 'home.html', {'data': data,'brand': brand,'brands':brands})
