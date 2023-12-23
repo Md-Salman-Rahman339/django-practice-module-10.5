@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% load crispy_forms_tags %}
+    
+    
+    {% if messages %}
+        {% for m in messages %}
+          <small 
+          {% if m.tags %}
+            class="{{m.tags}}"
+          {% endif %}
+             >{{m}}</small>
+        {% endfor %}
+    {% endif %}
+    
+    <h1>Home Page</h1>
+
+    <form method="post" style="width: 50%; height: 500px; margin:auto;" class="pt-4 row">
+        {% csrf_token %}
+        {% for field in form %}
+            {{ field.label_tag }}
+            {{ field }}
+            {{ field.errors|striptags }}
+        {% endfor %}
+        <button type="submit" class="btn btn-warning mt-2">Submit</button>
+        <br>
+        <small>Already have an account <a href="{% url 'login' %}"></a></small>
+        
+    </form>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+{% comment %} {% load crispy_forms_tags %} {% endcomment %}
+<form method="POST" style="width: 50%; height: 500px; margin:auto;" class="pt-4" action="{% url 'delete_album' id=object.id %}">
+    <h1>Are you sure you want to delete?</h1>
+    {% csrf_token %}
+    {% comment %} {{ form|crispy }} {% endcomment %}
+    <button type="submit" class="btn btn-warning mt-2">Delete</button>
+</form>
+{% endblock %}

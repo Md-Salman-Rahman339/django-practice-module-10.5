@@ -5,3 +5,9 @@ pip install django
 python -m django --version
 
 python -m django startapp first_app
+
+git pull origin main
+git add .
+git commit -m "Merged remote changes"
+
+git push origin main

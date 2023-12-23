@@ -8,7 +8,7 @@ class Student(models.Model):
     roll=models.IntegerField(primary_key=True)
     address=models.TextField()
     # big_integer_field = models.BigIntegerField()
-    binary_field = models.BinaryField(default=b'\x00')
+    # binary_field = models.BinaryField(default=b'\x00')
     date_time_field = models.DateTimeField()
   
 
