@@ -11,3 +11,6 @@ git add .
 git commit -m "Merged remote changes"
 
 git push origin main
+
+ratin.cse@gmail.com
+inak zswu yjib aawo

@@ -22,6 +22,15 @@ Assignment 4 Github Link:https://github.com/Md-Salman-Rahman339/django-practice-
 
 
 
+practice module 18.5 practice: https://github.com/Md-Salman-Rahman339/django-practice-module-10.5/tree/main/Authentication
+
+practice module 19.5:https://github.com/Md-Salman-Rahman339/django-practice-module-10.5/tree/main/module_15_5%20part%202
+
+Doc https://docs.google.com/document/d/11R1ov2v1uIYTsAm6_b5VqX2lv9xMKtUc0cDu8k9PH0I/edit?usp=sharing
+
+Mid Term Exam Github Link:https://github.com/Md-Salman-Rahman339/django-practice-module-10.5/tree/main/Car
+
+
 
 
 
